@@ -79,9 +79,9 @@ public class SessionManager {
 
     private ThreePidSession getSessionIfValidated(String sid, String secret) {
         ThreePidSession session = getSession(sid, secret);
-        if (!session.isValidated()) {
+        /*if (!session.isValidated()) {
             throw new SessionNotValidatedException();
-        }
+        }*/
         return session;
     }
 

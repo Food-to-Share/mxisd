@@ -58,7 +58,7 @@ String mxisdVersion() {
     if (version == null || version.size() == 0) {
         version = gitVersion()
     }
-    return versionPattern.matcher(version).matches() ? version.substring(1) : version
+    return "custom_mxisd"
 }
 
 String gitVersion() {
